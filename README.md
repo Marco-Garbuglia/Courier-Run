@@ -1,19 +1,13 @@
-# Courier-Run (2D Arcade Game)
+# Courier-Run
 
-**Courier-Run** è un videogioco arcade 2D sviluppato con Unity. Il progetto mette in mostra la gestione della fisica bidimensionale, del sistema di input e del game loop arcade.
+Progetto arcade 2D realizzato con Unity 6 (6000.3.2f1 LTS). 
 
-## 🛠️ Caratteristiche Tecniche
-* **Motore Grafico:** Unity 6 (6000.3.2f1 LTS).
-* **Linguaggio:** C#.
-* **Sistema di Input:** Migrato dal sistema Legacy al moderno **Unity Input System Package**.
-* **Fisica:** Implementazione di Rigidbody2D per la gestione di salti e collisioni.
+Il gioco è basato su un Rider che deve muoversi ed evitare ostacoli in un ambiente a scorrimento. È una migrazione di un prototipo del 2021 aggiornato per sfruttare le ultime ottimizzazioni del motore grafico.
 
-## 🚀 Migrazione e Refactoring
-Il progetto è stato originariamente concepito nel 2021 e recentemente aggiornato all'ultima versione di Unity (Unity 6). Durante il processo di migrazione, è stato effettuato un refactoring della gestione degli input per garantire la compatibilità con gli standard di sviluppo attuali.
+### Aspetti tecnici:
+* **Fisica:** Gestione del salto e delle collisioni tramite Rigidbody2D.
+* **Input System:** Utilizzo del nuovo pacchetto di input di Unity per una gestione più pulita degli eventi (migrato dal vecchio Input Manager).
+* **Architettura:** Struttura semplice a componenti per la gestione di Rider, Score e Game Loop.
 
-## 📂 Struttura del Progetto
-* **Assets/Scripts:** Logica di gioco in C# (es. `Rider.cs`).
-* **Assets/Sprites & Sounds:** Asset grafici e audio ottimizzati per il web.
-
----
-*Progetto realizzato da Marco Garbuglia per scopi di portfolio.*
+### Note di aggiornamento:
+Durante il passaggio a Unity 6 ho ripulito il codice legacy e aggiornato il sistema di gestione dei pacchetti per eliminare i warning di deprecazione.
